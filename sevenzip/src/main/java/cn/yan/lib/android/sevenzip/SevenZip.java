@@ -11,8 +11,11 @@ public class SevenZip {
 
     public interface OnStateListener {
         void onStart(String src);
+
         void onChange(String src, float progress);
+
         void onError(String src, int errorCode);
+
         void onSuccess(String src);
     }
 }
